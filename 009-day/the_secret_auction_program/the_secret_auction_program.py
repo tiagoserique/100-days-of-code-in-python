@@ -2,6 +2,7 @@ from os import clear
 from art import logo 
 #HINT: You can call clear() to clear the output in the console.
 
+
 def who_is_the_winner(bidders_info):
     heighest_bid = 0
     for person in bidders_info:
@@ -12,14 +13,13 @@ def who_is_the_winner(bidders_info):
     print(f"The winner is {winner} with a bid of {heighest_bid}")
 
 
-
 continue_bidding = True
 print(logo)
 bidders_info = {}
 
 while ( continue_bidding ):
-    name = input("What's your name?\n")
-    price = int(input("What is your bid?\n$"))
+    name    = input("What's your name?\n")
+    price   = int(input("What is your bid?\n$"))
 
     bidders_info[name] = price
 
@@ -27,6 +27,7 @@ while ( continue_bidding ):
 
     if ( theres_another_person == 'yes' ):
         clear()
+
     if ( theres_another_person == 'no' ):
         clear()
         who_is_the_winner(bidders_info)

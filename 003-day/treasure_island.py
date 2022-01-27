@@ -1,3 +1,4 @@
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -30,10 +31,13 @@ print("Your mission is to find the treasure.")
 choice = input("You're at a crossroad, where do you want to go? Left or right? ").lower()
 
 if ( choice == 'left' ):
-	choice = input("You've come to a lake. There is an island in the middle of the lake. Do you want to swin to the island or wait for a boat? ").lower()
+	choice = input("You've come to a lake. There is an island in the middle of"
+	" the lake. Do you want to swin to the island or wait for a boat? ").lower()
 	
 	if ( choice == 'wait' ):
-		choice = input("You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow and one blue. Which colour do you choose? ").lower()
+		choice = input("You arrive at the island unharmed. There is a house "
+		"with 3 doors. One red, one yellow and one blue. Which colour do you "
+		"choose? ").lower()
 
 		if ( choice == 'red' ):
 			print("It's a room full of fire")

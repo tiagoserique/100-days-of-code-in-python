@@ -1,3 +1,4 @@
+
 # 🚨 Don't change the code below 👇
 row1 = ["⬜️","⬜️","⬜️"]
 row2 = ["⬜️","⬜️","⬜️"]
@@ -13,7 +14,6 @@ column  = int(position[0]) - 1
 row     = int(position[1]) - 1
 
 map[row][column] = 'X'
-
 
 #Write your code above this row 👆
 

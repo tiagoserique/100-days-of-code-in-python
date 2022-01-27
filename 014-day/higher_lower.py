@@ -45,7 +45,6 @@ celebrity_a = select_celebrity()
 score 			= 0
 is_game_over 	= False
 while not( is_game_over ):
-
 	print(f"Compare A: {format_data(celebrity_a)}")
 	
 	print(vs)

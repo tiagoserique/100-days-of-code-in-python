@@ -25,6 +25,7 @@ def set_difficulty():
 	else:
 		return HARD_LEVEL_TURNS
 
+
 os.system('clear')
 print(logo)
 print("Welcome to the Number Guessing Game!")
@@ -45,6 +46,7 @@ while not( is_game_over ):
 	check_guess(guess, answer)
 	if ( guess == answer ):
 		is_game_over = True
+		
 	elif ( number_of_attempts_remaining == 0 ):
 		is_game_over = True
 		print("\nYou've run out of guessed, you lose")

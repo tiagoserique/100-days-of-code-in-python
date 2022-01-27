@@ -17,6 +17,7 @@ def caesar(start_text, shift_amount, cipher_direction):
 			position = alphabet.index(char)
 			new_position = position + shift_amount
 			end_text += alphabet[new_position]
+
 		else:
 			end_text += char
 	
@@ -29,7 +30,6 @@ print(logo)
 continue_program = True
 
 while ( continue_program ):
-
 	direction = input("Type 'encode' to encrypt or 'decode' to decrypt a message: \n")
 	text = input("Type the message: \n")
 	shift = int(input("Type the shift number: \n"))

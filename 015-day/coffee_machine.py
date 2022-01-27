@@ -129,6 +129,8 @@ def print_resources(resources, money):
 money 		= 0
 turn_off 	= False
 
+drinks = ["latte", "espresso", "cappuccino"]
+
 while not( turn_off ):
 	choice = input("  What would you like? (espresso/latte/cappuccino): ")
 	if ( choice == "report" ):
@@ -137,9 +139,7 @@ while not( turn_off ):
 	elif ( choice == "off"):
 		turn_off = True
 
-	elif (( choice == "latte")
-	   or ( choice == "espresso")
-	   or ( choice == "cappuccino")):
+	elif ( choice in drinks ):
 		if ( is_resources_sufficient(MENU[choice], resources) ):
 			value_inserted = process_coins()
 			if ( is_transaction_successful(MENU[choice], value_inserted) ):

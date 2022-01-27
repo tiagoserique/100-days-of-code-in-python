@@ -11,7 +11,7 @@ names = names_string.split(", ")
 
 #Write your code below this line 👇
 
-name = random.randint(0, len(names) - 1)
-name = names[name]
+random_name = random.randint(0, len(names) - 1)
+name = names[random_name]
 
 print(f"{name} is going to buy the meal today!")
