@@ -35,10 +35,10 @@ while ( game_is_on ):
 		scoreboard.increse_score()
 
 	# Detect collision with wall.
-	right_wall 	= snake.head.xcor() > 280
-	left_wall 	= snake.head.xcor() < -280
-	up_wall 	= snake.head.xcor() > 280
-	down_wall 	= snake.head.xcor() < -280
+	right_wall 	= snake.head.xcor() > 290
+	left_wall 	= snake.head.xcor() < -290
+	up_wall 	= snake.head.ycor() > 290
+	down_wall 	= snake.head.ycor() < -290
 
 	if ( right_wall ) or ( left_wall ) or ( up_wall ) or ( down_wall ):
 		game_is_on = False
