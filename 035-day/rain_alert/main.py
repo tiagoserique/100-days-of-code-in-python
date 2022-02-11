@@ -11,7 +11,7 @@ MY_TWILIO = ""
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/onecall"
 api_key = os.environ.get("OWM_API_KEY")
 account_sid = ''
-auth_token = os.environ.get("OWM_AUTH_TOKEN")
+auth_token = os.environ.get("AUTH_TOKEN")
 
 weather_parameters = {
 	"lat": -0.000990,
